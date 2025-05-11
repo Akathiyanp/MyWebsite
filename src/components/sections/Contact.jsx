@@ -19,6 +19,7 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
+        console.log("Email sent successfully: ", result.text);
         alert("Message Sent Successfully");
         setFormData({
           name: "",
@@ -26,7 +27,8 @@ export const Contact = () => {
           message: "",
         });
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log("Error sending email: ", error.text);
         alert("Failed to send the message, Please try again");
       });
   };
