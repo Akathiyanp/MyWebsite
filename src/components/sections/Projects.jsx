@@ -41,7 +41,7 @@ export const Projects = () => {
                   href="#"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
-                  View Project 👉🏽
+                  <a href="https://github.com/Akathiyanp/chat_hub"> View Project 👉🏽 </a>
                 </a>
               </div>
             </div>
